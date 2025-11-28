@@ -173,9 +173,7 @@
      *          AUTO REFRESH
      ************************************/
 
-    window.addEventListener("load", () => {
-        setTimeout(main, 500);
-    });
-
+    setTimeout(main, 500);
     setInterval(() => location.reload(), REFRESH_INTERVAL);
 })();
+
