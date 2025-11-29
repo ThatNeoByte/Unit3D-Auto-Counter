@@ -289,7 +289,7 @@
                 const match = msg.text.match(/^\[BON-POOL\]\-\[Contribution: ([\d,]+) bon\]\-\[Progress: (\d+)%\]\-\[By: ([^\]]+)\].*$/);
                 if (!match) return null;
 
-                const newMessage = `${match[3]} contributed ${match[1]} Bon to the pool, the pool is now at ${match[2]}%!`;
+                const newMessage = `@${match[3]} contributed ${match[1]} Bon to the pool, the pool is now at ${match[2]}%!`;
 
                 return {
                     modifyContent: true,
@@ -676,3 +676,4 @@
     initializeRouterMonitor();
     initializeObserver();
 })();
+
